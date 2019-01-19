@@ -20,10 +20,12 @@ void setup(void) {
 
 void loop(void) {
   a += 1;
-  String b = "Hello World!  ";
+  String b = "Hello!  ";
   b += a;
   char *z = b.c_str();
-  u8g2.drawStr(0, 20, z); 
-  u8g2.sendBuffer(); 
-  delay(1000);
+  u8g2.drawStr(0, 20, z);
+  u8g2.sendBuffer();
+  u8g2.clearBuffer();
+  delay(100);
+
 }
