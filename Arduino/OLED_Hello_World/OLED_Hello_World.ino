@@ -16,7 +16,11 @@ void setup() {
   u8g2.clearBuffer();          // clear the internal memory
   u8g2.setFont(u8g2_font_ncenB12_tr); // choose a suitable font
   u8g2.drawStr(0, 20, "Hello World!"); // write something to the internal memory
+  u8g2.setFont(u8g2_font_unifont_t_symbols);
+  u8g2.drawUTF8(5, 40, "Snowman: ☃");
   u8g2.sendBuffer();
+
+
 }
 
 void loop() {
